@@ -1,0 +1,19 @@
+a {
+  color: gray;
+}
+a:hover {
+  background-color: WhiteSmoke;
+}
+a.selected {
+  color: black;
+  font-weight: bold;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-dark .navbar-nav > li > a:hover, .navbar-dark .navbar-nav > li > a:focus {
+    background-color: #AAAAAA;
+    color: white;
+}

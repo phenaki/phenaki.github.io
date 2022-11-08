@@ -1,0 +1,305 @@
+
+<!doctype html>
+  <html lang="en">
+  <head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NNMSVWJX3P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NNMSVWJX3P');
+  </script>
+
+    <meta charset="utf-8">
+    <title>Phenaki</title>
+
+    <!-- Bootstrap core CSS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="stylesheet" href="custom.css">
+
+
+  </head>
+  <body class="text-center">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="#">Phenaki</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+
+          <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Main page</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="encoder_comparisons.html">Encoder-decoder</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="astronaut.html">Astronaut example</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="vehicle.html">Vehicle example</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="paper_videos.html">Videos from the paper</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="style_videos.html">Video styles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="miscellaneous.html">Other examples</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://tinyurl.com/phenaki-paper">Paper</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+
+      <main role="main" class="inner cover">
+        <section class="jumbotron text-center" >
+          <div class="container">
+            <center>
+            <h1>Phenaki</h1>
+            <h6 style="max-width: 900px">A model for generating videos from text, with prompts that can change over time, and videos that can be as long as multiple minutes.</h6>
+            <h6 style="max-width: 800px">Ruben Villegas, Mohammad Babaeizadeh, Pieter-Jan Kindermans, Hernan Moraldo, Han Zhang, Mohammad Taghi Saffar, Santiago Castro, Julius Kunze, Dumitru Erhan<h6>
+            <a class="btn btn-info" href="https://tinyurl.com/phenaki-paper" role="button">Read Paper</a>
+            </center>
+
+          </div>
+        </section>
+
+        <!--h1 class="cover-heading">Figure 1</h1>
+          <hr /-->
+
+	<center>
+        <table border=0><tr><td width=25%>
+          <center>
+          <h4>The water is magical</h4>
+
+          <p><img src="https://pub-bede3007802c4858abc6f742f405d4ef.r2.dev/stories/teddy_bear_2.gif" style="max-width: 100%; width: 256px"></img></p>
+
+          <b>Prompts used:</b><br>
+          A photorealistic teddy bear is swimming in the ocean at San Francisco.
+          The teddy bear goes under water.
+          The teddy bear keeps swimming under the water with colorful fishes.
+          A panda bear is swimming under water<br>
+          <br>
+
+
+          </center>
+        </td><td width=50%>
+
+          <center>
+          <h4>Chilling on the beach</h4>
+          (video + super res)
+
+          <p><img src="https://pub-bede3007802c4858abc6f742f405d4ef.r2.dev/stories/teddy_bear_super_res.webp" style="max-width: 80%; width: 512px"></img></p>
+
+          <b>Prompts used:</b><br>
+          A teddy bear diving in the ocean<br>
+          A teddy bear emerges from the water<br>
+          A teddy bear walks on the beach<br>
+          Camera zooms out to the teddy bear in the campfire by the beach<br>
+          <br>
+
+
+          </center>
+        </td><td width=25%>
+
+          <center>
+          <h4>Fireworks on the spacewalk</h4>
+
+          <p><img src="https://pub-bede3007802c4858abc6f742f405d4ef.r2.dev/stories/astronaut_story.webp" style="max-width: 100%; width: 256px"></img></p>
+
+          <b>Prompts used:</b><br>    
+          Side view of an astronaut is walking through a puddle on mars<br>
+          The astronaut is dancing on mars<br>
+          The astronaut walks his dog on mars<br>
+          The astronaut and his dog watch fireworks<br>
+          <br>
+
+
+          </center>
+        </td></tr></table>
+	</center>
+  <br><br><br>
+
+
+          <h3><a id=interactive>Interactive example</a></h3>
+          <p>Choose one combination of context words for creating a video about an astronaut.<br>
+          <small>All examples below use a model trained only on videos.</small></p>
+          <br><br>
+
+          <div id="word0">
+            <a class="btn-lg selected" href="#interactive" id=0>HD Video:</a>
+            <a class="btn-lg active" href="#interactive" id=1>A Cartoon</a>
+            </div>
+            <div id="word1">
+            <a class="btn-lg selected" href="#interactive" id=0>Riding a horse</a>
+            <a class="btn-lg active" href="#interactive" id=1>Riding a dinosaur</a>
+            <a class="btn-lg active" href="#interactive" id=2>Swimming</a>
+            </div>
+            <div id="word2">
+            <a class="btn-lg selected" href="#interactive" id=0>in the park at sunrise</a>
+            <a class="btn-lg active" href="#interactive" id=1>on mars with earth in the background</a>
+            </div>
+          <br>
+          <div id="areaonlyvid"><img src="https://pub-bede3007802c4858abc6f742f405d4ef.r2.dev/astronaut/onlyvid_0_0_0.webp"></div>
+          <script>
+            for (let i = 0; i < 3; i++) {
+            $( "#word" + i.toString() + " a" ).click(function() {
+              $( this ).parent().children("a.selected").toggleClass( "selected" );
+              $( this ).addClass( "selected" );
+              var w0 = $("#word0 a.selected").attr("id").toLowerCase().replace(/ /g,"_");
+              var w1 = $("#word1 a.selected").attr("id").toLowerCase().replace(/ /g,"_");
+              var w2 = $("#word2 a.selected").attr("id").toLowerCase().replace(/ /g,"_");
+              $("#areaonlyvid").html("<img src='https://pub-bede3007802c4858abc6f742f405d4ef.r2.dev/astronaut/onlyvid_" + w0 + "_" + w1 + "_" + w2+ ".webp' />");
+            });
+        }
+        </script> 
+        <br><br><br>
+
+
+        <h3>Generating video from a still image + a prompt</h3>
+        Input is the first frame, plus the prompt.<br><br>
+        <center>
+        <table border = 0>
+        <tr><td>
+          <center>
+          Camera zooms quickly into<br>the eye of the cat<br>
+          </center>
+
+        </td><td>
+          <center>
+          A white cat touches<br>the camera with the paw<br>
+          </center>
+        </td><td>
+          <center>
+          A white cat yawns loudly<br>
+
+
+          </center>
+        </td></tr>
+        <tr><td>
+          <center>
+          <p><img src="https://pub-bede3007802c4858abc6f742f405d4ef.r2.dev/short_videos/cat_eye_b.webp" width=256></img></p>
+          </center>
+
+        </td><td>
+          <center>
+          <p><img src="https://pub-bede3007802c4858abc6f742f405d4ef.r2.dev/short_videos/cat_paw.webp" width=256></img></p>
+        </center>
+        </td><td>
+          <center>
+          <p><img src="https://pub-bede3007802c4858abc6f742f405d4ef.r2.dev/short_videos/cat_yawn.webp" width=256></img></p>
+
+          </center>
+        </td></tr>
+        </table>
+        </center>
+        <br><br><br>
+
+
+        <center>
+        <h3>~2.5 minute video</h3>
+
+        <p>This 2:28 minutes story was generated using a long sequence of prompts, on an older version of Phenaki, then applied to a super res model</p><br>
+
+        <table border=0><tr><td><!-- <td style="vertical-align:top"> -->
+          <center><img src="https://pub-bede3007802c4858abc6f742f405d4ef.r2.dev/stories/motorcycle_long_super_res.webp" width=512></img></center>
+        </td><td style="max-width: 500px">
+          <center>
+          <small><b>Prompts used:</b><br>
+          First person view of riding a motorcycle through a busy street.
+          First person view of riding a motorcycle through a busy road in the woods.
+          First person view of very slowly riding a motorcycle in the woods.
+          First person view braking in a motorcycle in the woods.
+          Running through the woods.
+          First person view of running through the woods towards a beautiful house.
+          First person view of running towards a large house.
+          Running through houses between the cats.
+          The backyard becomes empty.
+          An elephant walks into the backyard.
+          The backyard becomes empty.
+          A robot walks into the backyard.
+          A robot dances tango.
+          First person view of running between houses with robots.
+          First person view of running between houses; in the horizon, a lighthouse.
+          First person view of flying on the sea over the ships.
+          Zoom towards the ship.
+          Zoom out quickly to show the coastal city.
+          Zoom out quickly from the coastal city.<br></small>
+          <br>
+          </center>
+        </td></tr>
+        </table>
+
+        </center>
+        <br><br><br><br>
+
+        <center>
+        <h3>2 minute video</h3>
+
+        <p>This 2-minute story was generated using a long sequence of prompts, on an older version of Phenaki, then applied to a super res model</p><br>
+
+        <table border=0><tr><td><!-- <td style="vertical-align:top"> -->
+          <center><img src="https://pub-bede3007802c4858abc6f742f405d4ef.r2.dev/stories/2_minute_super_res.webp" width=512></img></center>
+        </td><td style="max-width: 500px">
+          <center>
+          <small><b>Prompts used:</b><br>Lots of traffic in futuristic city.
+          An alien spaceship arrives to the futuristic city.
+          The camera gets inside the alien spaceship.
+          The camera moves forward until showing an astronaut in the blue room.
+          The astronaut is typing in the keyboard.
+          The camera moves away from the astronaut.
+          The astronaut leaves the keyboard and walks to the left.
+          The astronaut leaves the keyboard and walks away.
+          The camera moves beyond the astronaut and looks at the screen.
+          The screen behind the astronaut displays fish swimming in the sea.
+          Crash zoom into the blue fish.
+          We follow the blue fish as it swims in the dark ocean.
+          The camera points up to the sky through the water.
+          The ocean and the coastline of a futuristic city.
+          Crash zoom towards a futuristic skyscraper.
+          The camera zooms into one of the many windows.
+          We are in an office room with empty desks.
+          A lion runs on top of the office desks.
+          The camera zooms into the lion's face, inside the office.
+          Zoom out to the lion wearing a dark suit in an office room.
+          The lion wearing looks at the camera and smiles.
+          The camera zooms out slowly to the skyscraper exterior.
+          Timelapse of sunset in the modern city<br></small>
+          <br>
+          </center>
+        </td></tr>
+        </table>
+
+        </center>
+        <br><br><br><br>
+
+
+        <h3>Abstract</h3>
+
+          <center>
+            <p class="text-justify" style="max-width:800px">We present Phenaki, a model capable of realistic video synthesis given a sequence of textual prompts. Generating videos from text is particularly challenging due to the computational cost, limited quantities of high quality text-video data and variable length of videos.  To address these issues, we introduce a new causal model for learning video representation which compresses the video to a small representation of discrete tokens.  This tokenizer uses causal attention in time, which allows it to work with variable-length videos. To generate video tokens from text we are using a bidirectional masked transformer conditioned on pre-computed text tokens.  The generated video tokens are subsequently de-tokenized to create the actual video. To address data issues, we demonstrate how joint training on a large corpus of image-text pairs as well as a smaller number of video-text examples can result in generalization beyond what is available in the video datasets.  Compared to the previous video generation methods, Phenaki can generate arbitrary long videos conditioned on a sequence of prompts (i.e. time variable text or a story) in open domain. To the best of our knowledge, this is the first time a paper studies generating videos from time variable prompts.  In addition, the proposed video encoder-decoder outperforms all per-frame baselines currently used in the literature in terms of spatio-temporal quality and number of tokens per video.</p>
+            Read the paper <a href="https://tinyurl.com/phenaki-paper">here</a>.
+          </center>
+        </main>
+      </div>
+
+  </body>
+    </html>
