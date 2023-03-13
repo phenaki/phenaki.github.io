@@ -13,7 +13,7 @@
 </script>
 
     <meta charset="utf-8">
-    <title>Phenaki - encoder comparisons</title>
+    <title>Phenaki - examples</title>
 
     <!-- Bootstrap core CSS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -38,7 +38,7 @@
                 <a class="nav-link" href="index.html">Main page</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Encoder-decoder</a>
+                <a class="nav-link" href="encoder_comparisons.html">Encoder-decoder</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="astronaut.html">Astronaut example</a>
@@ -50,7 +50,7 @@
                 <a class="nav-link" href="paper_videos.html">Videos from the paper</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="style_videos.html">Video styles</a>
+                <a class="nav-link" href="#">Video styles</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="five_min_videos.html">Long videos</a>
@@ -70,48 +70,63 @@
       <main role="main" class="inner cover">
         <section class="jumbotron text-center" >
           <div class="container">
-            <h1>Encoder-decoder model: C-ViViT</h1>
+            <h1>Video styles</h1>
           </div>
         </section>
 
 
         <center>
-        <table border=0>
-        <tr><td><center><b>GT</b></center></td><td><center><b>ViT</b></center></td><td><center><b>C-ViViT</b></center></td></tr>
-
-        <tr>
-          <td>
-            <img src="https://pub-bede3007802c4858abc6f742f405d4ef.r2.dev/comparisons/gt1.gif" width=256></img>            
-          </td><td>
-            <img src="https://pub-bede3007802c4858abc6f742f405d4ef.r2.dev/comparisons/vit1.gif" width=256></img>                        
-          </td><td>
-            <img src="https://pub-bede3007802c4858abc6f742f405d4ef.r2.dev/comparisons/cvivit1.gif" width=256></img>            
-          </td></tr>
-
-        <tr>
-          <td>
-            <img src="https://pub-bede3007802c4858abc6f742f405d4ef.r2.dev/comparisons/gt2.gif" width=256></img>            
-          </td><td>
-            <img src="https://pub-bede3007802c4858abc6f742f405d4ef.r2.dev/comparisons/vit2.gif" width=256></img>                        
-          </td><td>
-            <img src="https://pub-bede3007802c4858abc6f742f405d4ef.r2.dev/comparisons/cvivit2.gif" width=256></img>            
-          </td></tr>
-
-        <tr>
-          <td>
-            <img src="https://pub-bede3007802c4858abc6f742f405d4ef.r2.dev/comparisons/gt3.gif" width=256></img>            
-          </td><td>
-            <img src="https://pub-bede3007802c4858abc6f742f405d4ef.r2.dev/comparisons/vit3.gif" width=256></img>                        
-          </td><td>
-            <img src="https://pub-bede3007802c4858abc6f742f405d4ef.r2.dev/comparisons/cvivit3.gif" width=256></img>            
-          </td></tr>
-
-        </table>
+          <table>
+          <tr>
+            <td>
+              <center>
+              <p style="max-width: 500px"><b>Prompt:</b> Pencil drawing: A Panda listening to music with headphones knitting a sweater while sitting on the couch. </p>
+              <p><img src="style_videos/mixed_pencil_drawing.gif" width=256></img></p>
+              <p style="max-width: 500px"><i><b>Model trained with 80% video and 20% image data.</b></i></p>
+              <p><img src="style_videos/video_only_pencil_drawing.gif" width=256></img></p>
+              <p style="max-width: 500px"><i><b>Model trained with 100% video data.</b></i></p>
+              </center>
+            </td>
+            <td>
+              <center>
+              <p style="max-width: 500px"><b>Prompt:</b> Water color style: A Panda listening to music with headphones knitting a sweater while sitting on the couch.</p>
+              <p><img src="style_videos/mixed_water_color.gif" width=256></img></p>
+              <p style="max-width: 500px"><i><b>Model trained with 80% video and 20% image data.</b></i></p>
+              <p><img src="style_videos/video_only_water_color.gif" width=256></img></p>
+              <p style="max-width: 500px"><i><b>Model trained with 100% video data.</b></i></p>
+              </center>
+            </td>
+          </tr>
+          <table>
         </center>
 
 
         </main>
       </div>
+
+     <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyBt-whe4qC6pg2ZGl5mjmVjtxSTfYYW5M8",
+        authDomain: "phenaki-ba425.firebaseapp.com",
+        projectId: "phenaki-ba425",
+        storageBucket: "phenaki-ba425.appspot.com",
+        messagingSenderId: "99940355605",
+        appId: "1:99940355605:web:f98f3d9a186ec4afacc81c",
+        measurementId: "G-7LGJPZBLCE"
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
 
     </body>
     </html>
